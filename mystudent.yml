@@ -1,0 +1,24 @@
+---
+- satudent:
+    -name: g
+     phone: 41575245
+     ad:
+       doorno: 4552
+       stno: 559
+       pincode: 1788
+
+
+    -name: b
+      phone: 368378
+      ad: 
+        doorno: 4874
+        stno: 556
+        pincode: 41984
+
+
+    -name: h
+      phone: 26264198
+      ad: 
+        doorno: 4198
+        stno: 54
+        pincode: 95455
