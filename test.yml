@@ -1,0 +1,9 @@
+---
+- name: my test apt install
+  hosts: all
+  become: yes
+  tsaks:
+          - name: install tree
+            apt:
+             name: tree
+             state: present
