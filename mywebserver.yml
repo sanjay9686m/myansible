@@ -6,3 +6,9 @@
     apt:
       name: apache2
       state: present     
+   
+  - name: i want to start a service 
+    service: 
+       name: apache2
+       state: present 
+    
