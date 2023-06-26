@@ -5,10 +5,12 @@
   - name: i want to install webserver
     apt:
       name: apache2
-      state: present     
+      state: present
+    when: ansible_os_family =="debian"         
    
   - name: i want to start a service 
     service: 
        name: apache2
-       state: present 
+       state: started
+    when: ansible_os_family =="debian"
     
