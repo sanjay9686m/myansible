@@ -18,10 +18,10 @@
     yum:
       name: httpd
       state: started
-    when:  ansible_os_family =="redhat" 
+    when:  ansible_os_family =="RedHat" 
 
   - name: i want to start web server on red hat
     service: 
        name: httpd
        state: started
-    when: ansible_os_family =="redhat"
+    when: ansible_os_family =="RedHat"
