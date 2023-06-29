@@ -1,0 +1,8 @@
+name: install tree
+become: yes
+hosts: all
+tasks: 
+ - name: want to install tree 
+   apt:
+    name: tree
+    state: pres  
