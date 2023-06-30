@@ -2,4 +2,4 @@
 
 sat: apache2
 bat: httpd
-p1: openjdk-11-jre
+p1: openjdk-11-jre  
