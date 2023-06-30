@@ -13,5 +13,5 @@
 
 
 [mywebserver:vars]
-sat=apache2
+sat=tree
 bat=httpd
