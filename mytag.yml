@@ -1,6 +1,6 @@
 ---
 - hosts: 172.31.87.217
-  becames: yes
+  become: yes
   tasks:
    - name: install wget
      apt:
