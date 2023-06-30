@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: mywebserver
   become: yes
   tasks: 
   - name: install jawa on ubuntu
