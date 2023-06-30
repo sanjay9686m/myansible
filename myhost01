@@ -1,17 +1,12 @@
 
-[mywebserver]
-172.31.87.217
-172.31.82.116
 
-[appserver]
-172.31.87.27
-172.31.82.72
-
-[sataserver]
 172.31.87.217
 172.31.82.116
 
 
-[mywebserver:vars]
+
+
 sat=apache2
 bat=httpd
+
+p1=openjdk-11-jre

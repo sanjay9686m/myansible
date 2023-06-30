@@ -4,7 +4,7 @@
   tasks: 
   - name: install jawa on ubuntu
     apt:
-      name: openjdk-11-jre
+      name: "{{p1}}"
       state: present
     when: ansible_os_family=="Debian"
 
