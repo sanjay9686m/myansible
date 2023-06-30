@@ -1,2 +1,17 @@
+
+[mywebserver]
 172.31.87.217
 172.31.82.116
+
+[appserver]
+172.31.87.27
+172.31.82.72
+
+[sataserver]
+172.31.87.217
+172.31.82.116
+
+
+[mywebserver:vars]
+mywebapackonubbuntu=apache2
+mywebapackonredhat=httpd
