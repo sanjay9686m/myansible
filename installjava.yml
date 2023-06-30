@@ -1,0 +1,11 @@
+---
+- hosts: mywemywebserver
+  become: yes
+  tasks: 
+  - name: install jawa on ubuntu
+    apt:
+      name: openjdk-11-jre
+      state: present
+    when: ansible_os_family=="Debian"
+
+
