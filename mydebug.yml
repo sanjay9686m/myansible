@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: 172.31.87.217
   become: yes
   tasks: 
   - name: i want to run a comment 
@@ -9,3 +9,15 @@
   - name: i want to display my first task result 
     debug: 
       msg: "{{resultforcom}}"
+
+  - name: i want to install git 
+    apt:
+       name: git
+       state: present
+    when: resultforcom.stderr ==""
+
+  - name: i want to install tree  
+    apt:
+       name: tree
+       state: present
+    when: resultforcom.stderr !=""
