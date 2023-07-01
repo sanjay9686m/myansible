@@ -3,7 +3,7 @@
   become: yes
   tasks: 
   - name: i want to run a comment 
-    commend: hostname -f
+    command: hostname -f
     register: resultforcom
 
   - name: i want to display my first task result 
