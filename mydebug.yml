@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.87.217
+- hosts: all
   become: yes
   tasks: 
   - name: i want to run a comment 
