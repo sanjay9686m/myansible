@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: i want to run a comment 
+    comment: hostname -f
+    register: resultforcom
+
+  - name: i want to display my first task result 
+    debug: 
+      msg: "{{resultforcom}}"
