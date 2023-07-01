@@ -1,9 +1,9 @@
 ---
-- hosts: all
+- hosts: 172.31.87.217
   become: yes
   tasks: 
   - name: i want to run a comment 
-    comment: hostname -f
+    commend: hostname -f
     register: resultforcom
 
   - name: i want to display my first task result 
