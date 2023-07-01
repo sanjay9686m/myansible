@@ -1,6 +1,6 @@
 ---
 hosts: 172.31.87.217
-become: all
+become: yes
 tasks: 
 - name: install git 
   apt: 
