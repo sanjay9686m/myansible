@@ -9,4 +9,11 @@
        src: myststic.txt
        dest: /root/myansible
 
- 
+   - name: install apache2
+     apt:
+       name: apache2
+       state: present      
+   - name: i wwant to create a dyno file in to ansible node 
+     template:
+       src: mydyno.j2
+       dest: /var/www/html/index.html
