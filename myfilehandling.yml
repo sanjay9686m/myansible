@@ -1,6 +1,6 @@
 --- 
 - name: file handeling
-  hosts: mywebserver
+  hosts: all 
   become: yes 
   tasks:
    - include_tasks: myfileee.yml 
