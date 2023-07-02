@@ -2,5 +2,5 @@
 - host: 172.31.87.217
   become: yes
   roles: 
-  - {when: mywebrole, when: ansible_os_family =="Debian"}
+  - {role: mywebrole, when: ansible_os_family =="Debian" }
 
