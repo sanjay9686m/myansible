@@ -1,6 +1,6 @@
 --- 
 - name: file handeling
-  hosts: 172.31.87.217
+  hosts: mywebserver
   become: yes 
   tasks:
    - include_tasks: myfileee.yml 
@@ -9,3 +9,4 @@
        src: myststic.txt
        dest: /root/myansible
 
+ 
