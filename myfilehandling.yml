@@ -1,6 +1,6 @@
 --- 
 - name: file handeling
-  hosts: all
+  hosts: 172.31.87.217
   become: true 
   tasks:
    - name: want to copy a file to ansible node
