@@ -1,0 +1,10 @@
+--- 
+- name: file handeling
+  hosts: all
+  become: true 
+  tasks:
+   - name: want to copy a file to ansible node
+     copy: 
+       src: myststic.txt
+       dest: /root/myansible
+
