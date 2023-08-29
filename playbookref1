@@ -1,0 +1,21 @@
+---
+- name: Install and Start Nginx
+  hosts: your_remote_server
+  become: true  # Run tasks with sudo or root privileges
+
+  tasks:
+    - name: Update apt cache (for Debian/Ubuntu)
+      apt:
+        update_cache: yes
+      when: ansible_os_family == 'Debian'
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+      when: ansible_os_family == 'Debian'
+
+    - name: Start Nginx service
+      service:
+        name: nginx
+        state: started
